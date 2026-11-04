@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f6f7f9; color: #1c1e21; }
+header, footer { text-align: center; padding: 2rem 1rem; }
+main { max-width: 960px; margin: 0 auto; padding: 0 1rem; }
+.grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.card a { display: block; height: 100%; padding: 1.25rem; background: #fff; border-radius: 10px; color: inherit; text-decoration: none; box-shadow: 0 1px 3px rgba(0,0,0,.15); transition: transform .15s; }
+.card a:hover, .card a:focus { transform: translateY(-3px); }
+.card h2 { margin: 0 0 .5rem; }
+.card p { margin: 0 0 .5rem; }
+small { color: #666; }
+@media (prefers-color-scheme: dark) {
+  body { background: #121316; color: #eee; }
+  .card a { background: #1e2024; }
+  small { color: #aaa; }
+}
