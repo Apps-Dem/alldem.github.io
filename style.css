@@ -7,9 +7,32 @@ main { max-width: 960px; margin: 0 auto; padding: 0 1rem; }
 .card a:hover, .card a:focus { transform: translateY(-3px); }
 .card h2 { margin: 0 0 .5rem; }
 .card p { margin: 0 0 .5rem; }
+.portfolio-credit { color: #5d6572; font-size: .95rem; letter-spacing: .02em; }
+.portfolio-link {
+  display: inline-block;
+  margin-left: .35rem;
+  color: #27364f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: .01em;
+  text-decoration: none;
+  background: linear-gradient(90deg, #405c85, #8a5b78, #405c85);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-position .4s ease, transform .2s ease;
+}
+.portfolio-link:hover, .portfolio-link:focus-visible {
+  background-position: right center;
+  transform: translateY(-1px);
+}
 small { color: #666; }
 @media (prefers-color-scheme: dark) {
   body { background: #121316; color: #eee; }
   .card a { background: #1e2024; }
+  .portfolio-credit { color: #aeb5c0; }
+  .portfolio-link { background-image: linear-gradient(90deg, #9db9df, #d3a6c1, #9db9df); }
   small { color: #aaa; }
 }
